@@ -4,6 +4,7 @@ import { ScrollView, StatusBar, View } from "react-native";
 import Estilo from "../styles/Estilo.js";
 import Dados from "../databases/Dados.js";
 import Conteudo from "../components/Conteudo.js";
+import Navegador from "../components/Navegador.js";
 
 export default function Home({ navigation }) {
     const DadosAleatorio = Dados.sort(function() {
@@ -15,7 +16,9 @@ export default function Home({ navigation }) {
             barStyle="light-content"
             backgroundColor="#000" />
         
-        <ScrollView>
+        <Navegador navigation={ navigation }/>
+        
+        <ScrollView pagingEnabled>
             { DadosAleatorio.length > 0 &&
                 DadosAleatorio.map(function(video) {
                     return <Conteudo

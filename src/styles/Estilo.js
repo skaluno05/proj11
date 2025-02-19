@@ -42,5 +42,38 @@ export default StyleSheet.create({
         color: "#fff",
         fontSize: 12,
         opacity: 0.6,
+    },
+
+    navegador: {
+        bottom: 0,
+        flexDirection: "row",
+        justifyContent: "space-around",
+        paddingVertical: 64,
+        position: "absolute",
+        width: "100%",
+        zIndex: 999,
+    },
+
+    navegadorIcone: {
+        height: 32,
+        width: 32,
+    },
+
+    telaMensagem: {
+        alignItems: "center",
+        height: Dimensions.get("screen").height,
+        justifyContent: "center",
+        width: "auto",
+    },
+
+    telaMensagemTexto: {
+        color: "#fff",
+        fontSize: 32,
+    },
+
+    botao: {
+        backgroundColor: "#222",
+        marginHorizontal: 16,
+        padding: 8,
     }
 })
